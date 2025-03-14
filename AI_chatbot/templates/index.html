@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Code Chatbot (Dark Mode)</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Code Chatbot (Dark Mode)</h1>
+
+    <!-- Chat window -->
+    <div class="chat-box" id="chatBox"></div>
+
+    <!-- Input area -->
+    <div class="input-area">
+      <input type="text" id="userInput" placeholder="Type your code-related question..." />
+      <button id="sendBtn">Send</button>
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
